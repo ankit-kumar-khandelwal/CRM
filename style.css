@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  background-color: rgba(59, 57, 57, 0.155);
+}
+
+.navbar {
+  padding: 10px;
+  margin: 10px;
+  font-weight: 500;
+  background: #ec1839;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.151);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 2px solid #ec1839;
+}
+
+.navbar-brand {
+  font-family: "poppins";
+  font-weight: 700;
+}
+
+.navbar-toggler.collapsed {
+  box-shadow: 0 0 0 1px;
+}
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 2.5px;
+}
+
+.nav-link {
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  color: white;
+  padding-left: 5px;
+}
+
+.footer {
+  background: #ec1839;
+  /* border: 2px solid #ec1839; */
+  font-family: "poppins";
+  border-radius: 5px;
+  margin: 0 5px;
+  color: white;
+}
+
+.description h4 {
+  text-align: center;
+  margin: 0;
+  padding: 10px 0;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+}
+
+.description p {
+  padding: 0 15px;
+  margin: 0;
+}
+
+.links {
+  padding: 0 15px 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.links h4 {
+  margin: 10px 0;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+}
+
+.useful-links span,
+.contact-links div {
+  display: flex;
+  flex-direction: column;
+}
+
+.useful-links a {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.useful-links a:hover {
+  text-decoration: underline;
+}
+
+.contact-links span{
+    margin-bottom: 5px;
+}
+
+.contact-links img{
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
