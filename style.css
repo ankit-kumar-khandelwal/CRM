@@ -3,51 +3,64 @@
 body {
   margin: 0;
   box-sizing: border-box;
-  background-color: rgba(59, 57, 57, 0.155);
+  /* background-color: rgba(59, 57, 57, 0.155); */
 }
 
 .navbar {
   padding: 10px;
   margin: 10px;
   font-weight: 500;
-  background: #ec1839;
+  background: #fa5b0f;
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.151);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-  border: 2px solid #ec1839;
+  /* border: 1px solid #ec1839; */
 }
 
 .navbar-brand {
   font-family: "poppins";
   font-weight: 700;
-}
+  color: white;
 
+}
+.navbar-brand:hover
+{
+  color: white;
+}
+.navbar-toggler{
+  border: 1px solid white;
+}
 .navbar-toggler.collapsed {
-  box-shadow: 0 0 0 1px;
+  box-shadow: 0 0 0 1px ;
+
+}
+.navbar-toggler-icon
+{
+  background-image: url(./Media/white-menu.png);
 }
 
 .navbar-toggler:focus {
-  box-shadow: 0 0 0 2.5px;
+  box-shadow: 0 0 0 2.5px  white;
 }
 
 .nav-link {
-  color: white;
   transition: all 0.3s ease-in-out;
+  color: white;
 }
 
 .nav-link:hover {
-  color: white;
+ 
   padding-left: 5px;
+  color: white;
 }
 
 .footer {
-  background: #ec1839;
-  /* border: 2px solid #ec1839; */
+  background: rgba(36, 34, 34, 0.893);
+    /* border: 1px solid #ec1839; */
   font-family: "poppins";
-  border-radius: 5px;
-  margin: 0 5px;
-  color: white;
+  /* border-radius: 10px; */
+  /* margin: 0 5px; */
 }
 
 .description h4 {
@@ -55,12 +68,14 @@ body {
   margin: 0;
   padding: 10px 0;
   font-weight: 600;
-  color: rgb(0, 0, 0);
+color: white;
 }
 
 .description p {
   padding: 0 15px;
   margin: 0;
+  color: white;
+  text-align: center;
 }
 
 .links {
@@ -68,12 +83,13 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  color: white;
 }
 
 .links h4 {
-  margin: 10px 0;
+  margin: 20px 0;
   font-weight: 600;
-  color: rgb(0, 0, 0);
+  color: white;
 }
 
 .useful-links span,
@@ -90,13 +106,14 @@ body {
 
 .useful-links a:hover {
   text-decoration: underline;
+  color: white;
 }
 
 .contact-links span{
-    margin-bottom: 5px;
+    margin-bottom: 15px;
 }
 
-.contact-links img{
+.contact-links svg{
     width: 25px;
     height: 25px;
     margin-right: 10px;
