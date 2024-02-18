@@ -6,7 +6,6 @@ body {
   /* background-color: rgba(59, 57, 57, 0.155); */
 }
 
-
 /* Navbar */
 
 .navbar {
@@ -49,7 +48,6 @@ body {
   padding-left: 5px;
   color: white;
 }
-
 
 /* Footer */
 
@@ -114,86 +112,155 @@ body {
   margin-right: 10px;
 }
 
-
 /* Register panel */
 
-.outer{
-    height: 100vh;
-    background-image: url("./Media/360_F_266004248_brGaUW8cSWcQBDt1NJshxSjHxBqTMUMo.jpg");
-    background-size: cover;
-    /* background-color: rgba(36, 34, 34, 0.893); */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.outer {
+  height: 100vh;
+  background-image: url("./Media/360_F_266004248_brGaUW8cSWcQBDt1NJshxSjHxBqTMUMo.jpg");
+  background-size: cover;
+  /* background-color: rgba(36, 34, 34, 0.893); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.inner{
-    width: 500px;
-    height: 600px;
-    background-color: #ffffff16;
-    backdrop-filter: blur(10px);
-    box-sizing: border-box;
-    border-radius: 20px;
-    display:flex;
-    flex-direction: column;
-    justify-content:space-between;
-    align-items: center;
-    padding: 50px;
+.inner {
+  width: 500px;
+  height: auto;
+  background-color: #ffffff16;
+  backdrop-filter: blur(10px);
+  box-sizing: border-box;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
 }
 
-h1{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #fa5b0f;
-    font-size: 35px;
-    text-shadow: 5px 5px 10px black ;
-    text-align: center;
-    margin: 0;
-    margin-bottom: 10px;
+h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #fa5b0f;
+  font-size: 35px;
+  text-shadow: 5px 5px 10px black;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 10px;
 }
 
-.input{
-    width: 100%;
-    height: 50px;
-    font-size: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 500;
-    background-color: transparent;
-    box-sizing: border-box;
-    border: none;
-    border-bottom: 3px #fa5b0f solid;
-    padding-left: 10px;
-    transition: .2s ease-in-out;
-    color: white;
+.input {
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 500;
+  background-color: transparent;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 3px #fa5b0f solid;
+  padding-left: 10px;
+  margin-bottom: 14px;
+  color: white;
+  transition: 0.2s ease-in-out;
 }
 
-.input:focus{
-    outline: none;
-    border: 3px #fa5b0f solid;
-    border-top-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-    padding-left: 20px;
+.input:focus {
+  outline: none;
+  border: 3px #fa5b0f solid;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding-left: 20px;
 }
 
-.input::placeholder{
-    font-size: 20px;
-    color: white;
+.input::placeholder {
+  font-size: 20px;
+  color: white;
 }
 
-option{
+option {
   color: black;
 }
 
-button{
-    width: 120px;
-    height: 50px;
-    background-color: #fa5b0f;
-    border: none;
-    border-radius: 20px;
-    font-size: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: bolder;
-    margin-top: 20px;
-    color: white;
-    cursor: pointer;
-    box-shadow: 0 0 15px black;
+#submit,#login {
+  width: 120px;
+  height: 50px;
+  background-color: #fa5b0f;
+  border: none;
+  border-radius: 20px;
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bolder;
+  margin-top: 20px;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 0 15px black;
+}
+
+
+/* User Panel */
+
+.otp{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.otpinput {
+  width: 120px;
+  margin-right: 30px;
+}
+
+ input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+.otpbtn{
+  width: 70px;
+  height: 30px;
+  border: none;
+  color: white;
+  background-color: #ffffff16;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.captcha{
+  width: 100%;
+  margin: 14px 0 14px 0;
+  display: flex;
+}
+
+.captchaBtn{
+  font-size: 25px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+#mainCaptcha{
+  width: 150px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 20px;
+  background-color: #ffffff16;
+  color: white;
+  font-size: 15px;
+  text-align: center;
+}
+
+#mainCaptcha:focus-visible{
+  outline: none;
+}
+
+#error{
+  text-align: center;
+  background-color: transparent;
+  color: rgb(254, 20, 20);
+  letter-spacing: 1px;
+  font-family: "poppins";
 }
