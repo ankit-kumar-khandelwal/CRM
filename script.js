@@ -80,3 +80,7 @@ function CheckValidCaptcha(){
 function removeSpaces(string) {
   return string.split(" ").join("");
 }
+
+function otp(){
+    document.getElementById('otp').innerHTML="Resend";
+}
