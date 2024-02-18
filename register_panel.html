@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Register Panel</title>
+  </head>
+  <body>
+    <div class="outer">
+      <div class="inner">
+        <h1>CRM FORM</h1>
+        <input type="text" placeholder="name" class="input" id="user" autocomplete="off"/>
+        <input type="email" placeholder="email" class="input" id="email" autocomplete="off"/>
+        <select name="hostel" class="input" id="hostel">
+            <option value="">-- select hostel --</option>
+            <option value="AN Khosla">AN Khosla</option>
+            <option value="MV">MV</option>
+            <option value="NSCB">NSCB</option>
+            <option value="PG">PG</option>
+            <option value="GSM">GSM</option>
+            <option value="Rana Punja">Rana Punja</option>
+        </select>
+        <input type="text" placeholder="poc" class="input" id="poc" />
+        <input type="text" placeholder="year" class="input" id="year" autocomplete="off"/>
+        <input type="text" placeholder="branch" class="input" id="branch" autocomplete="off"/>
+        <button type="submit" onclick="printToConsole()">Submit</button>
+      </div>
+    </div>
+
+    <!-- <script>
+      const user = document.getElementById("user");
+      const password = document.getElementById("password");
+      const email = document.getElementById("email");
+      function printToConsole() {
+        if (user.value && password.value && email.value) {
+          console.log("Username: ", user.value);
+          console.log("Password: ", password.value);
+          console.log("Email: ", email.value);
+          user.value = "";
+          password.value = "";
+          email.value = "";
+        }
+      }
+    </script> -->
+  </body>
+</html>
