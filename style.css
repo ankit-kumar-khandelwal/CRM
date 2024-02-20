@@ -181,7 +181,7 @@ option {
 }
 
 #submit,
-#login {
+#login,#complaintSubmit {
   width: 120px;
   height: 50px;
   background-color: #fa5b0f;
@@ -279,7 +279,7 @@ option {
   flex-wrap: wrap;
 }
 
-@media screen and (max-width:500px){
+@media screen and (max-width:335px){
   .main{
     height: auto;
   }
@@ -354,4 +354,59 @@ option {
   font-size: 13px;
   color: white;
   margin-bottom: 5px;
+}
+
+
+/* Complain Panel */
+
+.compalint h1{
+  margin-bottom: 20px;
+}
+
+.compalint h4,.topic h4,.POC h4{
+  align-self: normal;
+  color: white;
+  letter-spacing: 1px;
+  margin: 1px 0 0 0;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.complaintInput{
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: transparent;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 3px #fa5b0f solid;
+  padding-left: 10px;
+  color: #c6c6c6;
+  outline: none;
+  margin-bottom: 15px;
+}
+
+.topic,.POC{
+  align-self: normal;
+}
+
+#textarea{
+  width: 100%;
+  height: 100px;
+  background-color: #ffffff16;
+  border: none;
+  box-sizing: border-box;
+  border-radius: 10px;
+  color: white;
+  font-family: "poppins";
+  resize: none;
+  margin: 20px 0 10px 0;
+  padding: 15px;
+  line-height: 1.7em;
+}
+
+#textarea:focus-visible{
+  outline: none;
 }

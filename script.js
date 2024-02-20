@@ -64,27 +64,27 @@ function generateCaptcha() {
   document.getElementById("mainCaptcha").value = code;
 }
 
-function CheckValidCaptcha(){
-     var string1 = removeSpaces(document.getElementById("mainCaptcha").value);
-     var string2 = removeSpaces(document.getElementById("txtInput").value);
-     if (string1 != string2) {
-       document.getElementById("error").innerHTML =
-         "Please enter a valid captcha.";
-         return  false;
-     } else {
-       document.getElementById("error").innerHTML = "";
-       return true;
-     }
+function CheckValidCaptcha() {
+  var string1 = removeSpaces(document.getElementById("mainCaptcha").value);
+  var string2 = removeSpaces(document.getElementById("txtInput").value);
+  if (string1 != string2) {
+    document.getElementById("error").innerHTML =
+      "Please enter a valid captcha.";
+    return false;
+  } else {
+    document.getElementById("error").innerHTML = "";
+    return true;
+  }
 }
 
 function removeSpaces(string) {
   return string.split(" ").join("");
 }
 
-const otpbtn=document.getElementById('otp');
+const otpbtn = document.getElementById("otp");
 
-function otp(){
-    otpbtn.innerHTML="Resend";
+function otp() {
+  otpbtn.innerHTML = "Resend";
 }
 
 otpbtn.addEventListener("click", function (event) {
@@ -92,8 +92,28 @@ otpbtn.addEventListener("click", function (event) {
   otp();
 });
 
-document.getElementById('login').addEventListener('click',function(e){
-  if(!CheckValidCaptcha()){
+document.getElementById("login").addEventListener("click", function (e) {
+  if (!CheckValidCaptcha()) {
     e.preventDefault();
   }
-})
+});
+
+// document
+//   .getElementById("complaintSubmit")
+//   .addEventListener("click", function (e) {
+//     const textareaValue = document.getElementById("textarea").value;
+
+//     if (!checkProblem(textareaValue)) {
+//       e.preventDefault();
+//     } else {
+//       console.log(textareaValue);
+//     }
+//   });
+
+// function checkProblem(value) {
+//   if (value == "" || value == null) {
+//     return false;
+//   } else {
+//     return true;
+//   }
+// }
