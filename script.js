@@ -67,13 +67,13 @@ function generateCaptcha() {
 function CheckValidCaptcha(){
      var string1 = removeSpaces(document.getElementById("mainCaptcha").value);
      var string2 = removeSpaces(document.getElementById("txtInput").value);
-
-     if(string1!=string2){
-        document.getElementById("error").innerHTML =
-          "Please enter a valid captcha.";
-     }
-     else{
-        document.getElementById("error").innerHTML ="";
+     if (string1 != string2) {
+       document.getElementById("error").innerHTML =
+         "Please enter a valid captcha.";
+         return  false;
+     } else {
+       document.getElementById("error").innerHTML = "";
+       return true;
      }
 }
 
@@ -81,6 +81,19 @@ function removeSpaces(string) {
   return string.split(" ").join("");
 }
 
+const otpbtn=document.getElementById('otp');
+
 function otp(){
-    document.getElementById('otp').innerHTML="Resend";
+    otpbtn.innerHTML="Resend";
 }
+
+otpbtn.addEventListener("click", function (event) {
+  event.preventDefault();
+  otp();
+});
+
+document.getElementById('login').addEventListener('click',function(e){
+  if(!CheckValidCaptcha()){
+    e.preventDefault();
+  }
+})
