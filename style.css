@@ -280,12 +280,6 @@ option {
   flex-wrap: wrap;
 }
 
-@media screen and (max-width: 335px) {
-  .main {
-    height: auto;
-  }
-}
-
 .steps {
   padding: 20px;
   margin: 15px 0;
@@ -418,7 +412,7 @@ option {
 
 /* User Dashboard */
 
-.dashboard {
+.userDash {
   height: auto;
 }
 
@@ -483,4 +477,41 @@ option {
   color: white;
   cursor: pointer;
   box-shadow: 0 0 10px black;
+}
+
+
+/* Admin Dashboard */
+
+.adminDash{
+  height: 100vh;
+}
+
+.adminDash .tiles{
+  /* margin: 50px 0; */
+  padding: 35px 0;
+  align-self: normal;
+}
+
+.adminDash .tile{
+  width: 230px;
+  height: 160px;
+}
+
+.adminDash h4{
+  margin-top: 10px;
+}
+
+.adminDash p{
+  align-self: center;
+  color: #c6c6c6;
+  margin: 0;
+  margin-top: 25px;
+  font-size: 45px;
+  text-shadow: 5px 5px 15px black;
+}
+
+@media screen and (max-width: 335px) {
+  .main,.adminDash {
+    height: auto;
+  }
 }
