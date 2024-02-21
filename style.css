@@ -281,21 +281,27 @@ option {
 }
 
 .steps {
+  width: 1000px;
+  height: 600px;
   padding: 20px;
   margin: 15px 0;
+  justify-content: center;
+}
+
+.steps h4{
+  font-size: 20px;
 }
 
 .steps h4,
 .news h4 {
   text-align: center;
   color: white;
-  letter-spacing: 1px;
   margin-bottom: 0;
-  text-shadow: 0 0 5px black;
+  text-shadow: 5px 5px 15px black;
+  letter-spacing: 2px;
 }
 
 .steps ul {
-  align-self: normal;
   color: white;
   padding: 10px;
   padding-top: 0;
@@ -307,6 +313,8 @@ option {
   position: relative;
   line-height: 1.6em;
   padding-left: 20px;
+  letter-spacing: 1.5px;
+  font-size: 18px;
 }
 
 .steps ul li::before {
@@ -324,12 +332,10 @@ option {
 .steps ul li {
   padding-left: 30px;
   margin-bottom: 10px;
-  /* text-decoration: overline;
-  text-decoration-color: #fa590f; */
 }
 
 .news {
-  width: 230px;
+  width: 300px;
   height: auto;
   padding: 20px;
   margin-bottom: 10px;
@@ -342,7 +348,6 @@ option {
 
 .news ul {
   list-style: circle;
-  padding: 0;
   margin: 0;
 }
 
@@ -350,6 +355,7 @@ option {
   font-size: 13px;
   color: white;
   margin-bottom: 5px;
+  letter-spacing: 1.5px;
 }
 
 /* Complain Panel */
@@ -472,36 +478,34 @@ option {
   font-size: 13px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   margin: 10px 0 10px 0;
-  letter-spacing: .3px;
+  letter-spacing: 0.3px;
   font-weight: 600;
   color: white;
   cursor: pointer;
   box-shadow: 0 0 10px black;
 }
 
-
 /* Admin Dashboard */
 
-.adminDash{
+.adminDash {
   height: 100vh;
 }
 
-.adminDash .tiles{
-  /* margin: 50px 0; */
+.adminDash .tiles {
   padding: 35px 0;
   align-self: normal;
 }
 
-.adminDash .tile{
+.adminDash .tile {
   width: 230px;
   height: 160px;
 }
 
-.adminDash h4{
+.adminDash h4 {
   margin-top: 10px;
 }
 
-.adminDash p{
+.adminDash p {
   align-self: center;
   color: #c6c6c6;
   margin: 0;
@@ -510,8 +514,34 @@ option {
   text-shadow: 5px 5px 15px black;
 }
 
+.userid h2 {
+  color: #c6c6c6;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-shadow: 5px 5px 15px black;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+@media screen and (max-width: 1400px) {
+  .main {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 390px) {
+.steps h4{
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+  .steps ul li {
+    font-size: 16px;
+  }
+}
+
 @media screen and (max-width: 335px) {
-  .main,.adminDash,.userDash {
+  .adminDash,
+  .userDash {
     height: auto;
   }
 }
