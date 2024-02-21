@@ -413,7 +413,7 @@ option {
 /* User Dashboard */
 
 .userDash {
-  height: auto;
+  height: 100vh;
 }
 
 .tiles {
@@ -511,7 +511,7 @@ option {
 }
 
 @media screen and (max-width: 335px) {
-  .main,.adminDash {
+  .main,.adminDash,.userDash {
     height: auto;
   }
 }
