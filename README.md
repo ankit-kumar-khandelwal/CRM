@@ -6,6 +6,7 @@ git pull origin Branch Name
 git checkout Branch Name
 <!-- To Commit code -->
 git add .
+git status
 git commit -m "Comment"
 git push -u origin Branch Name
 <!-- Bootstrap Version -->
