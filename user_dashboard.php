@@ -18,7 +18,7 @@
                 <li>Tubelight</li>
                 <span>etc...</span>
             </ul>
-            <button id="complain">Complain Now</button>
+            <button id="complain" onclick="goTo()">Complain Now</button>
         </div>
         <div class="tile">
             <h4>Plumbing</h4>
@@ -29,7 +29,7 @@
                 <li>Leaking Faucet</li>
                 <span>etc...</span>
             </ul>
-            <button id="complain">Complain Now</button>
+            <button id="complain" onclick="goTo()">Complain Now</button>
         </div>
         <div class="tile">
             <h4>Carpentry</h4>
@@ -40,7 +40,7 @@
                 <li>Misaligned Doors</li>
                 <span>etc...</span>
             </ul>
-            <button id="complain">Complain Now</button>
+            <button id="complain"  onclick="goTo()">Complain Now</button>
         </div>
         <div class="tile">
             <h4>Cleaning</h4>
@@ -51,7 +51,7 @@
                 <li>Dirty Washrooms</li>
                 <span>etc...</span>
             </ul>
-            <button id="complain">Complain Now</button>
+            <button id="complain"  onclick="goTo()">Complain Now</button>
         </div>
         <div class="tile">
             <h4>Wi-Fi</h4>
@@ -62,7 +62,7 @@
                 <li>Internet Connection</li>
                 <span>etc...</span>
             </ul>
-            <button id="complain">Complain Now</button>
+            <button id="complain"  onclick="goTo()">Complain Now</button>
         </div>
         <div class="tile">
             <h4>Mess</h4>
@@ -73,7 +73,7 @@
                 <li>Garbage Disposal</li>
                 <span>etc...</span>
             </ul>
-            <button id="complain">Complain Now</button>
+            <button id="complain"  onclick="goTo()">Complain Now</button>
         </div>
         <div class="tile">
             <h4>Other</h4>
@@ -84,9 +84,11 @@
                 <li>Security and Safety</li>
                 <span>etc...</span>
             </ul>
-            <button id="complain">Complain Now</button>
+            <button id="complain"  onclick="goTo()">Complain Now</button>
         </div>
       </div>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
