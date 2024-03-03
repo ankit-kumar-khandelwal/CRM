@@ -26,9 +26,9 @@
         <div class="useful-links">
           <h4>Useful-Links</h4>
           <span>
-            <a href="/user">User</a>
-            <a href="/admin">Admin</a>
-            <a href="/register">Contact/Register</a>
+            <a href="/user_panel.html">User</a>
+            <a href="/admin_panel.html">Admin</a>
+            <a href="/register_panel.html">Contact/Register</a>
           </span>
         </div>
         <div class="contact-links">

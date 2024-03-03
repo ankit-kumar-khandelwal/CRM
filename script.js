@@ -98,6 +98,14 @@ document.getElementById("login").addEventListener("click", function (e) {
   }
 });
 
+function goTo(){
+  window.location.href = "complaint_panel.html";
+}
+
+// document.getElementById("complain").addEventListener("submit", () => {
+//   window.location.href = "complaint_panel.html";
+// });
+
 // document
 //   .getElementById("complaintSubmit")
 //   .addEventListener("click", function (e) {
